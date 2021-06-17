@@ -2,13 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Convert Numbers</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS.css">
     <style media="screen">
     body{
       margin: 0;
       padding: 0;
+      background: #313131;
     }
     .container{
       background: green;
@@ -20,6 +23,17 @@
       height: 700px;
       border-radius: 20px;
       box-shadow: 0 0 140px green;
+      animation: sok 10s linear infinite;
+      background: #313531;
+    }
+    @keyframes sok {
+      0%{
+        filter:hue-rotate(0deg);
+
+      }
+      100%{
+        filter: hue-rotate(360deg);
+      }
     }
     input,button{
       display: block;
@@ -41,6 +55,8 @@
       outline: none;
       cursor: pointer;
       box-shadow: 0 0 10px blue;
+      background:#414241;
+      color: white;
     }
     input:focus{
     border: 2px solid blue;
@@ -48,6 +64,7 @@
     }
     button:hover{
       background: blue;
+      outline: none;
     }
     h1{
       text-align: center;
@@ -61,7 +78,17 @@
       color:white;
       text-shadow: 0 5px 10px black;
     }
-
+@media only screen and (max-width: 500px) {
+  body{
+    background: #313131;
+  }
+  .container{
+    width: 350px;
+  }
+  input{
+    width: 300px;
+  }
+}
     </style>
   </head>
   <body>
